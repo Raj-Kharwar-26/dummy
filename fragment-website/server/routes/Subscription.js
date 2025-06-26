@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Subscription = require('./model/Subscription'); // ✔️ correct
+const Subscription = require('../model/Subscription'); // Fixed path
 
 router.post('/subscribe', async (req, res) => {
   const { email } = req.body;
